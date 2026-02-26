@@ -1,0 +1,105 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background: rgb(46, 24, 24);
+    font-family: 'Trebuchet MS';
+    color: rgb(46, 24, 24);
+    overflow: hidden;
+}
+
+.contenedor_2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: absolute;
+    margin-left: 10%;
+    width: 80%;
+    height: 70vh;
+    background: red;
+    box-shadow: inset 0px 0px 10px rgb(46, 24, 24);
+    border-radius: 20px;
+    transform: rotate(3deg);
+}
+
+.top {
+    background: wheat;
+    text-align: center;
+    font-size: 40px;
+    margin: 20px 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 5px rgb(46, 24, 24);
+}
+
+.down {
+    background: wheat;
+    text-align: center;
+    margin: 20px 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 5px rgb(46, 24, 24);
+}
+
+.contenedor {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    margin-top: 30%;
+    margin-left: 10%;
+    border-radius: 20px;
+    height: 70vh;
+    background: wheat;
+    transition: all .5s;
+    box-shadow: inset 0px 0px 5px rgb(46, 24, 24);
+}
+
+.contenedor:hover {
+    transform: rotate(270deg);
+}
+
+img {
+    width: 100%;
+    border-radius: 50%;
+    box-shadow: 0px 0px 20px rgb(46, 24, 24);
+}
+
+.icon_top,
+.icon_down {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.icon_top_p {
+    position: absolute;
+    font-size: 30px;
+    display: inline-block;
+    left: -20px;
+    transform: rotate(-45deg);
+}
+
+.icon_down_p {
+    position: absolute;
+    font-size: 30px;
+    display: inline-block;
+    right: -20px;
+    transform: rotate(45deg);
+}
+
+.corazon_r,
+.corazon_n {
+    font-size: 40px;
+}
+
+.corazon_r {
+    transform: translateX(10px);
+}
+
+.corazon_n {
+    transform: rotate(180deg) translateX(10px);
+}
